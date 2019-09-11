@@ -1,6 +1,6 @@
 {
-    "name": "zendframework/zf1-extras",
-    "description": "Zend Framework 1 Extras",
+    "name": "shardj/zf1-extras-future",
+    "description": "Zend Framework 1 Extras PHP 7.2 and 7.3 compatible",
     "type": "library",
     "keywords": [
         "framework",
@@ -24,5 +24,8 @@
         "branch-alias": {
             "dev-master": "1.12.x-dev"
         }
+    },
+    "replace": {
+        "zendframework/zf1-extras": "1.*"
     }
 }

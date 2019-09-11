@@ -55,11 +55,11 @@ sort($files);
 $result = 0;
 
 // run through phpunit
-while(list(, $file)=each($files)) {
+foreach ($files as $file) {
     echo "Executing {$file}" . PHP_EOL;
     system($PHPUNIT . ' --stderr -d memory_limit=-1 -d error_reporting=E_ALL\&E_STRICT -d display_errors=1 ' . escapeshellarg($file), $c_result);
     echo PHP_EOL;
-    
+
     if ($c_result) {
         $result = $c_result;
     }
