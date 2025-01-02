@@ -2,7 +2,7 @@
     "name": "pedropanos/zf1-extras-future",
     "description": "Zend Framework 1 Extras PHP 7.2 and 7.3 compatible + PHP8.2",
     "type": "library",
-    "version": "1.13.2",
+    "version": "1.13.3",
     "keywords": [
         "framework",
         "zf1"
