@@ -208,7 +208,7 @@ class ZendX_Db_Statement_Firebird extends Zend_Db_Statement
      * @return bool
      * @throws ZendX_Db_Statement_Firebird_Exception
      */
-    public function _execute(array $params = null)
+    public function _execute(?array $params = null)
     {
         if (!$this->_stmtPrepared) {
             return false;

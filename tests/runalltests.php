@@ -19,7 +19,9 @@
 * @license http://framework.zend.com/license/new-bsd New BSD License
 * @version $Id$
 */
-$zf = realpath('../vendor/zendframework/zendframework1/library');
+$zf = realpath('../vendor/pedropanos/zf1-future/library')
+    ?: realpath('../vendor/shardj/zf1-future/library')
+    ?: realpath('../vendor/zendframework/zendframework1/library');
 include '../vendor/autoload.php';
 spl_autoload_unregister(array('Zend_Loader_Autoloader','autoload'));
 set_include_path(implode(PATH_SEPARATOR, array($zf, get_include_path())));

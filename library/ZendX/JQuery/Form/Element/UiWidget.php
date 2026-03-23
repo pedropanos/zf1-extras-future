@@ -135,7 +135,7 @@ class ZendX_JQuery_Form_Element_UiWidget extends Zend_Form_Element
      * @param  Zend_View_Interface $view
      * @return ZendX_JQuery_Form_Element_UiWidget
      */
-    public function setView(Zend_View_Interface $view = null)
+    public function setView(?Zend_View_Interface $view = null)
     {
         if (null !== $view) {
             if (false === $view->getPluginLoader('helper')->getPaths('ZendX_JQuery_View_Helper')) {

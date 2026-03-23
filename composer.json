@@ -1,17 +1,17 @@
 {
     "name": "pedropanos/zf1-extras-future",
-    "description": "Zend Framework 1 Extras PHP 7.2 and 7.3 compatible + PHP8.2",
+    "description": "Zend Framework 1 Extras fork maintained for PHP 8.2 and PHP 8.4 compatibility",
     "type": "library",
-    "version": "1.13.3",
+    "version": "1.13.4",
     "keywords": [
         "framework",
         "zf1"
     ],
-    "homepage": "http://framework.zend.com/",
+    "homepage": "https://github.com/pedropanos/zf1-extras-future",
     "license": "BSD-3-Clause",
     "require": {
         "php": ">=8.2",
-        "zendframework/zendframework1": "1.12.*"
+        "pedropanos/zf1-future": "^1.25"
     },
     "autoload": {
         "psr-0": {
@@ -23,10 +23,17 @@
     ],
     "extra": {
         "branch-alias": {
-            "dev-master": "1.12.x-dev"
+            "dev-master": "1.13.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.2.0"
         }
     },
     "replace": {
-        "shardj/zf1-extras": "1.12.*"
+        "shardj/zf1-extras": "1.12.*",
+        "shardj/zf1-extras-future": "self.version"
     }
 }
